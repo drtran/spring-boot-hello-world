@@ -4,10 +4,13 @@ This project consists of a simple hello world program that returns a "Hello worl
 # To run:
 Two ways of running this application:
 
-## Maven:
+## spring-boot:run :
+``1
 mvn spring-boot:run
 ```
-## Maven package:
+
+## java -jar: 
+```
 mvn package
 java -jar target/helloworldproject-0.0.1-SNAPSHOT.jar
 ```

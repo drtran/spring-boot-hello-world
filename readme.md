@@ -5,13 +5,19 @@ This project consists of a simple hello world program that returns a "Hello worl
 Two ways of running this application:
 
 ## spring-boot:run :
-``1
+
+```
 mvn spring-boot:run
 ```
 
 ## java -jar: 
+
 ```
 mvn package
 java -jar target/helloworldproject-0.0.1-SNAPSHOT.jar
 ```
 
+## curl:
+```
+curl http://localhost:8080
+```

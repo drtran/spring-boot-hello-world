@@ -1,6 +1,3 @@
-
-
-
 plugins {
     id 'java'
     id 'com.gradle.build-scan' version '2.4'
@@ -41,5 +38,5 @@ buildScan {
 }
 
 bootJar {
-  mainClassName = 'Example'
+  	mainClassName = 'Example'
 }

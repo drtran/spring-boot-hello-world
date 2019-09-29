@@ -33,6 +33,27 @@ java -jar target/helloworldproject-0.0.1-SNAPSHOT.jar
 curl http://localhost:8080
 ```
 
+## dependency-check:
+
+Add this certificate to the cacerts keystore.
+
+```bash
+ 
+sudo keytool -import -noprompt -trustcacerts -alias nistca -file ./nvd.nist.gov -keystore /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/security/cacerts -storepass changeit
+```
+
+```bash
+mvn clean dependency-check:check
+```
+
+## SonarQube
+
+I run SonarQube container on port 49004.
+
+```bash
+mvn -Dsonar.host.url=http://localhost:49004 clean test sonar:sonar
+```
+
 ## Working with OpenShift Community Development/OKD 3.11:
 I used this website to create a java s2i application template: https://github.com/jorgemoralespou/s2i-java.
 
